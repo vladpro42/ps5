@@ -32,17 +32,17 @@ body {
 }
 
 .container {
-    max-width: 1420px;
+    max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
 }
 
 h2 {
-    font-size: 48px;
     line-height: 1;
 }
 
 .h2 {
+    font-size: 2.66rem;
     text-align: center;
 }
 
@@ -127,7 +127,7 @@ h2 {
 .header__item-link {
     color: var(--white);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.11rem;
     transition: color var(--primary-time);
 }
 
@@ -152,7 +152,8 @@ h2 {
 /**/
 
 .top {
-    padding: 100px 0;
+    /* padding: 120px 0; */
+    padding: 6.66rem 0;
 }
 
 .top__inner {
@@ -165,7 +166,7 @@ h2 {
 
 .top__title {
     font-weight: 700;
-    font-size: 80px;
+    font-size: 4.44rem;
     color: var(--white);
     max-width: 620px;
     margin-bottom: 2rem;
@@ -195,11 +196,16 @@ h2 {
 /**/
 .playstation__inner {
     text-align: center;
+
 }
+
+
 
 .playstation__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    padding-top: 2.7rem;
 }
 
 .playstation__item {
@@ -282,6 +288,7 @@ h2 {
     border-radius: 20px;
     overflow: hidden;
     flex-wrap: wrap;
+    padding-top: 5rem;
 }
 
 .rent__item {
@@ -295,6 +302,22 @@ h2 {
 
 .rent__image-wrap .image-fluid {
     position: relative;
+}
+
+.rent__item:nth-child(1) .image-fluid {
+    border-top-left-radius: 1.8rem;
+}
+
+.rent__item:nth-child(2) .image-fluid {
+    border-top-right-radius: 1.8rem;
+}
+
+.rent__item:nth-child(3) .image-fluid {
+    border-bottom-left-radius: 1.8rem;
+}
+
+.rent__item:nth-child(4) .image-fluid {
+    border-bottom-right-radius: 1.8rem;
 }
 
 .rent__image-wrap.image-wrap::after {
@@ -349,12 +372,17 @@ h2 {
 .games__subtitle {
     font-size: 2.11rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 .games__body {
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 5.5rem;
+}
+
+.list-block { 
+    padding-top: 5.5rem;
 }
 
 .games__left {
@@ -374,7 +402,6 @@ h2 {
     width: calc(100% / 3 - 1rem);
     display: flex;
     flex-direction: column;
-
 }
 
 .game__body {
@@ -438,6 +465,7 @@ h2 {
     background-image: url(https://arendapristavok.by/wp-content/uploads/2024/01/Rectangle-14-1.png);
     display: flex;
     align-items: start;
+    margin-top: 5rem;
     border-radius: 15px;
 }
 
@@ -455,7 +483,7 @@ h2 {
 }
 
 .condition__item-wrap {
-    width: 40%;
+    width: 30%;
 }
 
 .condition__item-title {
@@ -560,6 +588,7 @@ h2 {
 .main-form__label {}
 
 .main-form__input {
+    color: var(--white);
     width: 100%;
     border: none;
     border: 2px solid var(--primary);
@@ -569,6 +598,7 @@ h2 {
 }
 
 .main-form__textarea {
+    color: var(--white);
     width: 100%;
     border: none;
     border: 2px solid var(--primary);
@@ -608,11 +638,10 @@ h2 {
 
 .faq__item-container {
     display: flex;
+    justify-content: space-between;
 }
 
-.faq__ask {
-    
-}
+.faq__ask {}
 
 .faq__ask-text {
     font-size: 1.55rem;
@@ -620,7 +649,12 @@ h2 {
 }
 
 .faq__answer {
-    margin-bottom: 0.75rem;
+    /* margin-bottom: 0.75rem; */
+    display: none;
+}
+
+.faq__toggle {
+    transition: transform 0.3s ease;
 }
 
 .faq__answer-text {
