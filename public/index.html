@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#" class="header__logo">
+                <a href="/" class="header__logo">
                     <img src="./assets/logo.webp" alt="">
                 </a>
 
@@ -40,9 +40,66 @@
                 <div class="header__phones">
                     <a class="header__phone" href="tel:+375257601992">+375 (25) 760-19-92</a>
                 </div>
+
+                <div class="toggle-menu">
+                    <button class="toggle-menu__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                            <rect x="1" y="1" width="62" height="62" rx="23" fill="#2527F8"></rect>
+                            <rect x="1" y="1" width="62" height="62" rx="23" fill="#162AD7" fill-opacity="0.6"></rect>
+                            <rect x="1" y="1" width="62" height="62" rx="23" fill="url(#paint0_linear_147_3691)"
+                                fill-opacity="0.4"></rect>
+                            <rect x="1" y="1" width="62" height="62" rx="23" stroke="url(#paint1_linear_147_3691)"
+                                stroke-width="2"></rect>
+                            <path opacity="0.4"
+                                d="M41.6951 26.4176C44.556 26.4176 46.8751 24.0985 46.8751 21.2376C46.8751 18.3768 44.556 16.0576 41.6951 16.0576C38.8343 16.0576 36.5151 18.3768 36.5151 21.2376C36.5151 24.0985 38.8343 26.4176 41.6951 26.4176Z"
+                                fill="white"></path>
+                            <path
+                                d="M22.305 26.4176C25.1658 26.4176 27.485 24.0985 27.485 21.2376C27.485 18.3768 25.1658 16.0576 22.305 16.0576C19.4442 16.0576 17.125 18.3768 17.125 21.2376C17.125 24.0985 19.4442 26.4176 22.305 26.4176Z"
+                                fill="white"></path>
+                            <path
+                                d="M41.6951 47.942C44.556 47.942 46.8751 45.6229 46.8751 42.762C46.8751 39.9012 44.556 37.582 41.6951 37.582C38.8343 37.582 36.5151 39.9012 36.5151 42.762C36.5151 45.6229 38.8343 47.942 41.6951 47.942Z"
+                                fill="white"></path>
+                            <path opacity="0.4"
+                                d="M22.305 47.942C25.1658 47.942 27.485 45.6229 27.485 42.762C27.485 39.9012 25.1658 37.582 22.305 37.582C19.4442 37.582 17.125 39.9012 17.125 42.762C17.125 45.6229 19.4442 47.942 22.305 47.942Z"
+                                fill="white"></path>
+                            <defs>
+                                <linearGradient id="paint0_linear_147_3691" x1="32" y1="0" x2="32" y2="64"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0.178609" stop-color="#2527F8" stop-opacity="0.16"></stop>
+                                    <stop offset="0.94693" stop-color="#2527F8"></stop>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_147_3691" x1="32" y1="0" x2="32" y2="64"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#232CFF" stop-opacity="0"></stop>
+                                    <stop offset="1" stop-color="#232CFF"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </button>
+
+                    <div class="toggle-menu__body">
+                        <ul class="toggle-menu-list">
+                            <li class="toggle-menu-item">
+                                <a class="toggle-menu-link" href="#">Прокат приставок</a>
+                            </li>
+                            <li class="toggle-menu-item">
+                                <a class="toggle-menu-link" href="#">Прокат приставок</a>
+                            </li>
+                            <li class="toggle-menu-item">
+                                <a class="toggle-menu-link" href="#">Прокат приставок</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
+
+    <style>
+    </style>
+
+
 
     <main class="main">
         <section class="top">
@@ -127,7 +184,7 @@
                     </div>
                 </div>
         </section>
-        <section class="games">
+        <section class="games padding-bottom">
             <div class="container">
                 <div class="games__inner">
                     <h2 class="games__title h2">
@@ -175,7 +232,7 @@
                 </div>
         </section>
 
-        <section class="conditions">
+        <section class="conditions padding-bottom">
             <div class="container">
                 <h2 class="conditions__title h2">
                     Условия аренды
@@ -221,7 +278,7 @@
                 </div>
             </div>
         </section>
-        <section class="other">
+        <section class="other padding-bottom">
             <div class="container">
                 <div class="other__inner">
                     <h2 class="other__title h2">
@@ -246,7 +303,7 @@
             </div>
         </section>
 
-        <div class="form-block">
+        <div class="form-block padding-bottom">
             <div class="container">
                 <div class="form-block__inner">
                     <div class="form-block__left">
@@ -262,7 +319,8 @@
                             </label>
 
                             <label class="main-form__label">
-                                <input class="main-form__input" type="text" placeholder="phone">
+                                <input maxlength="13" class="main-form__input" pattern="^[\+0-9\s\-]+$" type="tel"
+                                    name="phone" placeholder="phone">
                             </label>
 
                             <label class="main-form__label">
@@ -281,7 +339,7 @@
             </div>
         </div>
 
-         <section class="faqs">
+        <section class="faqs padding-bottom">
             <div class="container">
                 <div class="faqs__inner">
                     <h2 class="other__title h2">
@@ -325,7 +383,6 @@
         </section>
 
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -367,7 +424,6 @@
             </div>
         </div>
     </footer>
-   <!---  -->
 
 </body>
 

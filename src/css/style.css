@@ -10,6 +10,8 @@ html {
     box-sizing: inherit;
 }
 
+
+
 :root {
     --bg-site: #000;
     /* 131313*/
@@ -29,6 +31,10 @@ body {
     font-style: normal;
     background-color: var(--bg-site);
     color: var(--white);
+}
+
+button {
+    outline: none;
 }
 
 .container {
@@ -149,6 +155,60 @@ h2 {
     color: var(--primary);
 }
 
+.toggle-menu {
+    position: relative;
+}
+
+.toggle-menu__btn {
+    display: none;
+    background-color: transparent;
+    transition: rotate var(--primary-time);
+}
+
+.toggle-menu__btn.toggle-menu__btn--active {
+    rotate: 90deg;
+}
+
+.toggle-menu__body {
+    margin-top: 0.35rem;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 200px;
+    z-index: 5;
+    border: 1px solid var(--primary);
+    background-color: #2527F8;
+    border-radius: var(--primary-border);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+}
+
+.toggle-menu__body--active {
+    max-height: 500px;
+    opacity: 1;
+}
+
+
+.toggle-menu__body--active {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.toggle-menu-list {
+    padding: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
 /**/
 
 .top {
@@ -198,8 +258,6 @@ h2 {
     text-align: center;
 
 }
-
-
 
 .playstation__list {
     display: flex;
@@ -280,7 +338,7 @@ h2 {
 /**/
 
 .rent {
-    padding: 100px 0;
+    padding: 5.55rem 0;
 }
 
 .rent__list {
@@ -360,8 +418,10 @@ h2 {
 
 /**/
 
-.games {
-    padding-bottom: 120px;
+.games,
+.padding-bottom {
+    padding-bottom: 6.66rem;
+
 }
 
 .games__title {
@@ -381,7 +441,7 @@ h2 {
     padding-top: 5.5rem;
 }
 
-.list-block { 
+.list-block {
     padding-top: 5.5rem;
 }
 
@@ -456,7 +516,6 @@ h2 {
 
 .conditions {
     padding-bottom: 120px;
-
 }
 
 
@@ -618,7 +677,7 @@ h2 {
 /* faqs*/
 
 .faqs {
-    padding-bottom: 120px;
+    padding-bottom: 6.66rem;
 }
 
 .faqs__list {
@@ -693,6 +752,7 @@ h2 {
 }
 
 .footer__links {
+    width: 100%;
     display: flex;
     flex-direction: column;
 

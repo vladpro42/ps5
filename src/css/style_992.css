@@ -131,7 +131,6 @@
 
     .conditions__left {
         width: 100%;
-        padding-bottom: 6rem;
     }
 
     .condition__item-wrap {
@@ -144,6 +143,7 @@
         bottom: -100%;
         left: 50%;
         transform: translate(-50%, -80%);
+        display: none;
     }
 
     .other__item {
@@ -163,6 +163,33 @@
     .main-form__btn {
         text-align: center;
         justify-content: center;
+    }
+
+    .footer__inner {
+        grid-template-columns: 60px repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__col {
+        width: calc(100% / 3 - 1rem);
+    }
+
+    .footer__phone {
+        margin-bottom: 1rem;
+    }
+
+    .rent,
+    .padding-bottom {
+        padding: 2.75rem 0;
+    }
+
+    .toggle-menu__btn {
+        display: flex;
+    }
+
+    .header__phones {
+        margin-right: 2rem;
     }
 
 }
@@ -239,9 +266,7 @@
         min-width: 15vw;
     }
 
-    .conditions__right {
-        display: none;
-    }
+
 
     .other__item {
         padding: 1rem;
@@ -282,6 +307,32 @@
     .form-block__right {
         width: 100%;
     }
+
+    .faq__ask-text {
+        font-size: 1.05rem;
+    }
+
+    .faq__answer-text {
+        font-size: 0.95rem;
+    }
+
+    .faq__ask {
+        margin-bottom: 0.75rem;
+    }
+
+    .faqs__list {
+        padding: 1rem;
+        margin-top: 2.5rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .rent,
+    .padding-bottom {
+        padding: 3.5rem 0;
+    }
 }
 
 
@@ -311,6 +362,30 @@
     .condition__item-wrap {
         display: none;
     }
+
+    .faqs__list {
+        padding: 0.45rem;
+    }
+
+    .faq__item {
+        padding: 0.75rem;
+    }
+
+    .footer__inner {
+        grid-template-columns: 60px repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__col {
+        width: calc(100% / 2 - 1rem);
+        flex-grow: 1;
+    }
+
+    .footer__phone {
+        margin-bottom: 1rem;
+    }
+
 }
 
 
@@ -351,10 +426,24 @@
     .form-block__inner {
         gap: 1.75rem;
     }
+
+
+    .rent,
+    .padding-bottom {
+        padding: 2.5rem 0;
+    }
 }
 
 
 @media (max-width: 475px) {
+
+    .conditions__inner {
+        margin-top: 2.0rem;
+    }
+
+    .h2 {
+        font-size: 1.75rem;
+    }
 
     html {
         font-size: 16px;
@@ -387,6 +476,27 @@
 
     .other__list {
         gap: 1.5rem
+    }
+
+    .faq__item {
+        padding: 0.5rem;
+    }
+
+    .faqs__list {
+        padding: 0.5rem;
+    }
+
+    .header__phones {
+        margin: 0px auto;
+    }
+
+    .header__phone {
+        font-size: 1rem;
+    }
+
+    .toggle-menu__btn svg {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -423,6 +533,38 @@
         margin: 1rem 0;
     }
 
+    .faq__ask-text {
+        font-size: 1rem;
+    }
+
+    .faq__toggle {
+        padding-right: 0.35rem;
+    }
+
+    .footer__col {
+        width: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .dev__text {
+        text-align: center;
+    }
+
+    .footer__links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__link {
+        width: calc(100% / 2 - 20px);
+        flex-grow: 1;
+    }
+
+    .rent,
+    .padding-bottom {
+        padding: 2rem 0;
+    }
 
 }
 
