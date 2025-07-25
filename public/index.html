@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+</script>
+
 </head>
 
 <body>
@@ -75,6 +82,7 @@
                                 </linearGradient>
                             </defs>
                         </svg>
+
                     </button>
 
                     <div class="toggle-menu__body">
@@ -89,6 +97,9 @@
                                 <a class="toggle-menu-link" href="#">Прокат приставок</a>
                             </li>
                         </ul>
+                          <div class="header__phones">
+                    <a class="header__phone" href="tel:+375257601992">+375 (25) 760-19-92</a>
+                </div>
                     </div>
 
                 </div>
@@ -139,27 +150,103 @@
                             <div class="playstation__image-wrap image-wrap">
                                 <img class="image-fluid" src="./assets/service1.webp" alt="">
                             </div>
-                            <div class="playstation__tabs">
-                                <button class="playstation__tab active">1 день</button>
-                                <button class="playstation__tab">2 день</button>
-                                <button class="playstation__tab">3 день</button>
-                            </div>
-                            <p class="playstation__item-title">
-                                PLAYSTATION 5
-                            </p>
-                            <div class="playstation__prices">
-                                <p class="playstation_price">1 день - 45 BYN</p>
-                                <p class="playstation_price">2 день - 20 BYN</p>
-                                <p class="playstation_price">3 день - БЕСПЛАТНО</p>
-                            </div>
-                            <div class="playstation__btns">
-                                <button class="playstation__order btn btn-site">Заказать 65 BYN</button>
+                            <div class="playstation__item-body">
+                                <div class="playstation__tabs">
+                                    <button class="playstation__tab active">1 день</button>
+                                    <button class="playstation__tab">2 день</button>
+                                    <button class="playstation__tab">3 день</button>
+                                </div>
+                                <p class="playstation__item-title">
+                                    PLAYSTATION 5
+                                </p>
+                                <div class="playstation__prices">
+                                    <p class="playstation_price">1 день - 45 BYN</p>
+                                    <p class="playstation_price">2 день - 20 BYN</p>
+                                    <p class="playstation_price">3 день - БЕСПЛАТНО</p>
+                                </div>
+                                <div class="playstation__btns">
+                                    <button class="playstation__order btn btn-site">Заказать 65 BYN</button>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="playstation__item">
+                            <div class="playstation__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/service2.webp" alt="">
+                            </div>
+                            <div class="playstation__item-body">
+                                <div class="playstation__tabs">
+                                    <button class="playstation__tab active">1 день</button>
+                                    <button class="playstation__tab">2 день</button>
+                                    <button class="playstation__tab">3 день</button>
+                                </div>
+                                <p class="playstation__item-title">
+                                    PLAYSTATION 4 PRO
+                                </p>
+                                <div class="playstation__prices">
+                                    <p class="playstation_price">1 день - 45 BYN</p>
+                                    <p class="playstation_price">2 день - 20 BYN</p>
+                                    <p class="playstation_price">3 день - БЕСПЛАТНО</p>
+                                </div>
+                                <div class="playstation__btns">
+                                    <button class="playstation__order btn btn-site">Заказать 65 BYN</button>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="playstation__item">
+                            <div class="playstation__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/service3.webp" alt="">
+                            </div>
+                            <div class="playstation__item-body">
+                                <div class="playstation__tabs">
+                                    <button class="playstation__tab active">1 день</button>
+                                    <button class="playstation__tab">2 день</button>
+                                    <button class="playstation__tab">3 день</button>
+                                </div>
+                                <p class="playstation__item-title">
+                                    XBOX SERIES X
+                                </p>
+                                <div class="playstation__prices">
+                                    <p class="playstation_price">1 день - 45 BYN</p>
+                                    <p class="playstation_price">2 день - 20 BYN</p>
+                                    <p class="playstation_price">3 день - БЕСПЛАТНО</p>
+                                </div>
+                                <div class="playstation__btns">
+                                    <button class="playstation__order btn btn-site">Заказать 65 BYN</button>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="playstation__item">
+                            <div class="playstation__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/service4.webp" alt="">
+                            </div>
+                            <div class="playstation__item-body">
+                                <div class="playstation__tabs">
+                                    <button class="playstation__tab active">1 день</button>
+                                    <button class="playstation__tab">2 день</button>
+                                    <button class="playstation__tab">3 день</button>
+                                </div>
+                                <p class="playstation__item-title">
+                                    XBOX ONE X
+                                </p>
+                                <div class="playstation__prices">
+                                    <p class="playstation_price">1 день - 45 BYN</p>
+                                    <p class="playstation_price">2 день - 20 BYN</p>
+                                    <p class="playstation_price">3 день - БЕСПЛАТНО</p>
+                                </div>
+                                <div class="playstation__btns">
+                                    <button class="playstation__order btn btn-site">Заказать 65 BYN</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="rent">
             <div class="container">
                 <div class="rent__inner">
@@ -181,9 +268,55 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="rent__item">
+                            <div class="rent__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/rent-bg.jpg" alt="">
+                            </div>
+                            <div class="rent__body">
+                                <div class="rent__left">
+                                    <p class="rent__stage">2</p>
+                                </div>
+                                <div class="rent__right">
+                                    <p class="rent__right-title">Детали</p>
+                                    <p class="rent__right-text">Дождитесь подтверждения и нашего звонка. Мы свяжемся с Вами в ближайшее время</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rent__item">
+                            <div class="rent__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/rent-bg.jpg" alt="">
+                            </div>
+                            <div class="rent__body">
+                                <div class="rent__left">
+                                    <p class="rent__stage">3</p>
+                                </div>
+                                <div class="rent__right">
+                                    <p class="rent__right-title">Доставка</p>
+                                    <p class="rent__right-text">Доставим приставку по указанному адресу</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rent__item">
+                            <div class="rent__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/arend-2.png" alt="">
+                            </div>
+                            <div class="rent__body">
+                                <div class="rent__left">
+                                    <p class="rent__stage">4</p>
+                                </div>
+                                <div class="rent__right">
+                                    <p class="rent__right-title">Договор</p>
+                                    <p class="rent__right-text">Заключение договора для надежности и официальности заказа</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
         </section>
+
         <section class="games padding-bottom">
             <div class="container">
                 <div class="games__inner">
@@ -223,6 +356,130 @@
                                     </button>
                                 </div>
                             </div>
+
+                             
+
+                             <div class="game__item">
+                                <div class="game__item-wrap image-wrap">
+                                    <img class="image-fluid" src="./assets/game-3.webp" alt="">
+                                </div>
+                                <div class="game__body">
+                                    <div class="game__body-items">
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-compact-disc"></i>
+                                            Диск
+                                        </p>
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            x2
+                                        </p>
+                                    </div>
+                                    <p class="game__body-name">
+                                        FC 24
+                                    </p>
+                                    <button class="game__btn btn btn-link">
+                                        <span>Заказать</span><i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="game__item">
+                                <div class="game__item-wrap image-wrap">
+                                    <img class="image-fluid" src="./assets/game-1.webp" alt="">
+                                </div>
+                                <div class="game__body">
+                                    <div class="game__body-items">
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-compact-disc"></i>
+                                            Диск
+                                        </p>
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            x1
+                                        </p>
+                                    </div>
+                                    <p class="game__body-name">
+                                        Spider-Man 2
+                                    </p>
+                                    <button class="game__btn btn btn-link">
+                                        <span>Заказать</span><i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="game__item">
+                                <div class="game__item-wrap image-wrap">
+                                    <img class="image-fluid" src="./assets/game-5.webp" alt="">
+                                </div>
+                                <div class="game__body">
+                                    <div class="game__body-items">
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-compact-disc"></i>
+                                            Диск
+                                        </p>
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            x2
+                                        </p>
+                                    </div>
+                                    <p class="game__body-name">
+                                        FIFA 23
+                                    </p>
+                                    <button class="game__btn btn btn-link">
+                                        <span>Заказать</span><i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                             <div class="game__item">
+                                <div class="game__item-wrap image-wrap">
+                                    <img class="image-fluid" src="./assets/game-6.webp" alt="">
+                                </div>
+                                <div class="game__body">
+                                    <div class="game__body-items">
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-compact-disc"></i>
+                                            FIFA 23
+                                        </p>
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            x2
+                                        </p>
+                                    </div>
+                                    <p class="game__body-name">
+                                        UFC 4
+                                    </p>
+                                    <button class="game__btn btn btn-link">
+                                        <span>Заказать</span><i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                             <div class="game__item">
+                                <div class="game__item-wrap image-wrap">
+                                    <img class="image-fluid" src="./assets/game-7.webp" alt="">
+                                </div>
+                                <div class="game__body">
+                                    <div class="game__body-items">
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-compact-disc"></i>
+                                            Диск
+                                        </p>
+                                        <p class="game__body-item">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            x1
+                                        </p>
+                                    </div>
+                                    <p class="game__body-name">
+                                        Resident Evil Village
+                                    </p>
+                                    <button class="game__btn btn btn-link">
+                                        <span>Заказать</span><i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                             
                         </div>
                     </div>
                     <div class="games__btns">
@@ -240,8 +497,8 @@
                 <div class="conditions__inner">
                     <div class="conditions__left">
                         <div class="condition__item">
-                            <div class="condition__item-wrap image-wrap">
-                                <img class="image-fluid" src="./assets/condition-1.webp" alt="">
+                            <div class="condition__item-wrap ">
+                                <img width="128" height="128" class="" src="./assets/condition-1.webp" alt="">
                             </div>
                             <div class="condition__item-body">
                                 <p class="condition__item-title">18+</p>
@@ -250,22 +507,22 @@
                             </div>
                         </div>
                         <div class="condition__item">
-                            <div class="condition__item-wrap image-wrap">
-                                <img class="image-fluid" src="./assets/condition-2.webp" alt="">
+                            <div class="condition__item-wrap ">
+                                <img width="128" height="128"  src="./assets/condition-2.webp" alt="">
                             </div>
                             <div class="condition__item-body">
-                                <p class="condition__item-title">18+</p>
-                                <p class="condition__item-text">На момент заключения договора вам уже исполнилось 18 лет
+                                <p class="condition__item-title">Договор</p>
+                                <p class="condition__item-text">При заключении договора при себе необходимо иметь действующий паспорт гражданина Республики Беларусь
                                 </p>
                             </div>
                         </div>
                         <div class="condition__item">
-                            <div class="condition__item-wrap image-wrap">
-                                <img class="image-fluid" src="./assets/condition-3.webp" alt="">
+                            <div class="condition__item-wrap ">
+                                <img width="128" height="128" src="./assets/condition-3.webp" alt="">
                             </div>
                             <div class="condition__item-body">
-                                <p class="condition__item-title">18+</p>
-                                <p class="condition__item-text">На момент заключения договора вам уже исполнилось 18 лет
+                                <p class="condition__item-title">Обязательства</p>
+                                <p class="condition__item-text">Арендующий берет на себя ответственность и заключает договор, который регулирует правила аренды
                                 </p>
                             </div>
                         </div>
@@ -278,6 +535,7 @@
                 </div>
             </div>
         </section>
+
         <section class="other padding-bottom">
             <div class="container">
                 <div class="other__inner">
@@ -291,6 +549,76 @@
                             </div>
                             <div class="other__item-body">
                                 <p class="other__item-title">PS4 GAMEPAD</p>
+                                <div class="other__item-btns">
+                                    <button class="other__item-btn btn btn-link">
+                                        <span>От 7 BYN сутки</span><i class="fa-solid fa-angles-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="other__item">
+                            <div class="other__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/accessory-2.webp" alt="">
+                            </div>
+                            <div class="other__item-body">
+                                <p class="other__item-title">PLAYSTATION VR</p>
+                                <div class="other__item-btns">
+                                    <button class="other__item-btn btn btn-link">
+                                        <span>От 7 BYN сутки</span><i class="fa-solid fa-angles-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="other__item">
+                            <div class="other__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/accessory-3.webp" alt="">
+                            </div>
+                            <div class="other__item-body">
+                                <p class="other__item-title">XBOX GAMEPAD</p>
+                                <div class="other__item-btns">
+                                    <button class="other__item-btn btn btn-link">
+                                        <span>От 7 BYN сутки</span><i class="fa-solid fa-angles-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="other__item">
+                            <div class="other__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/accessory-4.webp" alt="">
+                            </div>
+                            <div class="other__item-body">
+                                <p class="other__item-title">PS CAMERA</p>
+                                <div class="other__item-btns">
+                                    <button class="other__item-btn btn btn-link">
+                                        <span>От 7 BYN сутки</span><i class="fa-solid fa-angles-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="other__item">
+                            <div class="other__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/accessory-5.webp" alt="">
+                            </div>
+                            <div class="other__item-body">
+                                <p class="other__item-title">PS5 GAMEPAD</p>
+                                <div class="other__item-btns">
+                                    <button class="other__item-btn btn btn-link">
+                                        <span>От 7 BYN сутки</span><i class="fa-solid fa-angles-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="other__item">
+                            <div class="other__image-wrap image-wrap">
+                                <img class="image-fluid" src="./assets/accessory-6.webp" alt="">
+                            </div>
+                            <div class="other__item-body">
+                                <p class="other__item-title">NINTENDO SWITCH</p>
                                 <div class="other__item-btns">
                                     <button class="other__item-btn btn btn-link">
                                         <span>От 7 BYN сутки</span><i class="fa-solid fa-angles-right"></i>
@@ -313,27 +641,40 @@
                     </div>
                     <div class="form-block__right">
                         <h2 class="main-form__title h2">Остались вопросы?</h2>
-                        <form class="main-form">
-                            <label class="main-form__label">
-                                <input class="main-form__input" type="text" placeholder="Имя" name="name">
-                            </label>
+                       <form class="main-form" id="ajax-form">
+    <label class="main-form__label">
+        <input class="main-form__input" type="text" placeholder="Имя" name="name" required>
+    </label>
 
-                            <label class="main-form__label">
-                                <input maxlength="13" class="main-form__input" pattern="^[\+0-9\s\-]+$" type="tel"
-                                    name="phone" placeholder="phone">
-                            </label>
+    <label class="main-form__label">
+        <input class="main-form__input phone-mask" type="text" 
+               name="phone" placeholder="+375 (___) ___-__-__" required>
+    </label>
 
-                            <label class="main-form__label">
-                                <textarea placeholder="Что вы хотите узнать?" class="main-form__textarea" name="message"
-                                    id=""></textarea>
-                            </label>
+    <label class="main-form__label">
+        <textarea placeholder="Что вы хотите узнать?" 
+                 class="main-form__textarea" name="message"></textarea>
+    </label>
 
-                            <div class="main-form__btns">
-                                <button name="submit" class="main-form__btn btn btn-site">
-                                    Отправить
-                                </button>
-                            </div>
-                        </form>
+    <div class="svg-loader" style="display: none;">
+        <svg viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="20" fill="none" stroke="#3498db" stroke-width="4"></circle>
+        </svg>
+    </div>
+
+    <div class="form-messages">
+        <div class="success-message" style="display: none;"></div>
+        <div class="error-message" style="display: none;"></div>
+    </div>
+
+    <div class="main-form__btns">
+        <button type="submit" class="main-form__btn btn btn-site">
+            Отправить
+        </button>
+    </div>
+    
+    <input type="hidden" name="action" value="submit_custom_form">
+</form>
                     </div>
                 </div>
             </div>
@@ -365,24 +706,177 @@
                         <div class="faq__item">
                             <div class="faq__item-container">
                                 <div class="faq__ask">
-                                    <span class="faq__ask-text">Аренда игровых приставок в Могилеве – отличный способ
-                                        провести незабываемый вечер! </span>
+                                    <span class="faq__ask-text">Почему аренда – это лучше, чем покупка?  </span>
                                 </div>
                                 <i class="fa-solid fa-plus faq__toggle"></i>
                             </div>
 
                             <div class="faq__answer">
                                 <p class="faq__answer-text">
-                                    Мечтаешь сразиться со своими друзьями в
+                                    Временная насыщенность: Новая приставка – это круто, но стоит признать, что играть каждый день удается далеко не всем. Со временем приставка может превратиться в «пылесборник», который достают лишь по праздникам. 
+Экономия: Аренда PlayStation 4 или PS5 обойдется в разы дешевле, чем покупка. Ты можешь заказать доставку прямо домой и отлично провести вечер без лишних трат. 
+Отсутствие рисков: При покупке можно ошибиться с выбором модели, столкнуться с техническими проблемами или быстро устаревающим устройством. С арендой тебе это не грозит – мы предоставим только проверенное оборудование последнего поколения.
                                 </p>
                             </div>
                         </div>
+
+                        <div class="faq__item">
+                            <div class="faq__item-container">
+                                <div class="faq__ask">
+                                    <span class="faq__ask-text">Sony PlayStation 5 в аренду – новые возможности для развлечений</span>
+                                </div>
+                                <i class="fa-solid fa-plus faq__toggle"></i>
+                            </div>
+
+                            <div class="faq__answer">
+                                <p class="faq__answer-text">
+                                    Аренда PlayStation 5 в Могилеве – это шанс испытать мощь последней консоли от Sony. Чем она круче?
+Графика нового уровня. Улучшенный процессор и видеокарта обеспечивают потрясающую картинку и стабильные 60 FPS. 
+Мгновенные загрузки. С новыми SSD-накопителями больше не придется ждать – игры запускаются за секунды. 
+Революционный звук. Благодаря улучшенной 3D-аудиосистеме погружение в игру становится еще глубже. Мы предлагаем в аренду Sony PlayStation 5 в Могилеве на самых выгодных условиях и по самым низким ценам.
+Возьмите в аренду PlayStation 5, и оцените её новые возможности лично! Даже если ты уже арендовал PS4, ты заметишь невероятную разницу в скорости, качестве и возможностях новой консоли.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__item-container">
+                                <div class="faq__ask">
+                                    <span class="faq__ask-text">Что входит в комплект?</span>
+                                </div>
+                                <i class="fa-solid fa-plus faq__toggle"></i>
+                            </div>
+
+                            <div class="faq__answer">
+                                <p class="faq__answer-text">
+                                    Консоль на выбор: PlayStation 4, PS4 Pro, PS5, Xbox Series X/S. — 2 геймпада для совместной игры.
+Набор кабелей для подключения.
+Подписка на самые новые игры.
+Сумка-рюкзак для переноски приставки.
+Опционально: шлем VR, игровой монитор или дополнительные аксессуары.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__item-container">
+                                <div class="faq__ask">
+                                    <span class="faq__ask-text">Когда стоит взять приставку в аренду? </span>
+                                </div>
+                                <i class="fa-solid fa-plus faq__toggle"></i>
+                            </div>
+
+                            <div class="faq__answer">
+                                <p class="faq__answer-text">
+                                    1. Дружеские встречи и вечеринки. Устрой турнир по FIFA, гонкам или файтингам – это заряд эмоций и веселья!
+2. Детские праздники. Консоль с любимыми детскими играми станет центром внимания на дне рождения.
+3. Выход новых игр. Не покупай консоль ради одной игры – арендуй её на неделю и насладись всеми возможностями.
+4. Тест новой технологии. Попробуй последнюю модель перед покупкой, чтобы убедиться, что она тебе подходит.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__item-container">
+                                <div class="faq__ask">
+                                    <span class="faq__ask-text">Почему выбирают нас?</span>
+                                </div>
+                                <i class="fa-solid fa-plus faq__toggle"></i>
+                            </div>
+
+                            <div class="faq__answer">
+                                <p class="faq__answer-text">
+                                    Доставка по Могилеву. Привезем консоль в удобное для тебя место.
+Гарантия качества. Все приставки в идеальном состоянии, с настройкой и поддержкой.
+Широкий выбор игр. От спортивных симуляторов до приключений и RPG – выбирай игры на свой вкус.
+Доступные цены. Мы предлагаем лучшие условия аренды игровых приставок в Могилеве.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__item-container">
+                                <div class="faq__ask">
+                                    <span class="faq__ask-text">Не упусти возможность подарить себе и своим друзьям яркий вечер!  </span>
+                                </div>
+                                <i class="fa-solid fa-plus faq__toggle"></i>
+                            </div>
+
+                            <div class="faq__answer">
+                                <p class="faq__answer-text">
+                                    Заказывай аренду PlayStation 4, PlayStation 5, Xbox или шлемов VR прямо сейчас! Насладись лучшими играми, современными технологиями и комфортом от использования. Будь в центре геймерского мира, не тратя лишнего! Мы предлагаем в аренду Sony PlayStation 5 в Могилеве, на самых выгодных условиях и по самым низким ценам!
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
+
+
+    <div class="modal">
+        <div class="modal__container">
+            <div class="modal__inner">
+                <button class="modal__close">
+                    <svg width="48" height="48" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#fff"></path>
+                    </svg>
+                </button>
+
+                <span class="modal__title">Заказать прокат</span>
+
+                <select class="modal__select" >
+                    <option selected value="">Без консоли</option>
+                    <option value="">PlayStation 5</option>
+                    <option value="">PlayStation 4 Pro</option>
+                    <option value="">XBox One X</option>
+                </select>
+
+                <select class="modal__select" >
+                    <option selected value="">Без диска</option>
+                    <option value="">Другой диск</option>
+                    <option value="">Assassins Creed Mirage</option>
+                    <option value="">FIFA 23</option>
+                    <option value="">FC 24</option>
+                    <option value="">Spider-Man 2</option>
+                    <option value="">Resident Evil Village</option>
+                    <option value="">Resident Evil 5</option>
+                    <option value="">UFC 4</option>
+                    <option value="">UFC 5</option>
+                    <option value="">Diablo 4</option>
+                    <option value="">Gran Turismo 7</option>
+                    <option value="">Hogwarts Legacy</option>
+                    <option value="">Baldur's Gate 3</option>
+                    <option value="">Mortal Kombat 11</option>
+                    <option value="">Mortal Kombat 1</option>
+                </select>
+
+                <label class="modal__label">
+                    <input class="modal__input" type="text" placeholder="Имя*">
+                </label>
+
+                <label class="modal__label">
+                    <input class="modal__input" type="text" placeholder="Телефон*">
+                </label>
+
+                <div class="modal__label-data">
+                    <div class="modal__label-box">
+                        <input class="modal__input" type="text" placeholder="Дата с*">
+                    </div>
+                    <div class="modal__label-box">
+                        <input class="modal__input" type="text" placeholder="Дата по*">
+                    </div>
+                </div>
+                    <textarea class="modal__textarea" type="text" placeholder="Сообщение"></textarea>
+
+                <input class="modal__submit" type="submit" value="Заказать">
+            </div>
+        </div>
+    </div>
+
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -395,23 +889,23 @@
                     <span class="footer__title">Прокат приставок</span>
                     <div class="footer__links">
                         <a href="#" class="footer__link">Прокат PlayStation 5</a>
-                        <a href="#" class="footer__link">Прокат PlayStation 5</a>
-                        <a href="#" class="footer__link">Прокат PlayStation 5</a>
+                        <a href="#" class="footer__link">Прокат PlayStation 4 PRO</a>
+                        <a href="#" class="footer__link">Прокат XBOX ONE X</a>
                     </div>
                 </div>
                 <div class="footer__col">
                     <span class="footer__title">Прокат аксессуаров</span>
                     <div class="footer__links">
-                        <a href="#" class="footer__link">Прокат PlayStation 5</a>
-                        <a href="#" class="footer__link">Прокат PlayStation 5</a>
-                        <a href="#" class="footer__link">Прокат PlayStation 5</a>
+                        <a href="#" class="footer__link">Прокат PlayStation VR</a>
+                        <a href="#" class="footer__link">Прокат джойстиков</a>
+                        <a href="#" class="footer__link">Прокат дисков</a>
                     </div>
                 </div>
                 <div class="footer__col">
                     <span class="footer__title">Прокат игр</span>
                     <div class="footer__links">
-                        <a href="#" class="footer__link">Прокат PlayStation 5</a>
-                        <a href="#" class="footer__link">Прокат PlayStation 5</a>
+                        <a href="#" class="footer__link">Прокат игр на PlayStation</a>
+                        <a href="#" class="footer__link">Прокат игр на XBOX</a>
                     </div>
                 </div>
                 <div class="footer__col">

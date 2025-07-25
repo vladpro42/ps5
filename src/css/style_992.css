@@ -1,571 +1,620 @@
 @media (max-width: 1200px) {
-    .playstation__item {
-        padding: 0.75rem;
-    }
+  .playstation__item {
+    padding: 0.75rem;
+  }
 
-    .playstation__item-title {
-        font-size: 1.5rem;
-    }
+  .playstation__item-title {
+    font-size: 1.5rem;
+  }
 
-    .btn-site {
-        padding-inline: 1.35rem;
-        font-size: 1rem;
-    }
+  .btn-site {
+    padding-inline: 1.35rem;
+    font-size: 1rem;
+  }
 
-    .playstation__tab {
-        padding: 0.55rem 0.65rem;
-    }
+  .playstation__tab {
+    padding: 0.75rem 0.85rem;
+  }
 
-    .conditions__left {
-        padding: 2.15rem 2.15rem;
-    }
-
+  .conditions__left {
+    padding: 2.15rem 2.15rem;
+  }
 }
 
 @media (max-width: 992px) {
+  .header__list {
+    display: none;
+  }
 
+  .padding-bottom {
+    padding-bottom: 5rem;
+  }
 
-    .header__list {
-        display: none;
-    }
+  .top {
+    padding: 4.5rem 0;
+  }
 
-    .top {
-        padding: 4.5rem 0;
-    }
+  .top__inner {
+    flex-direction: column;
+  }
 
-    .top__inner {
-        flex-direction: column;
-    }
+  .top__col:first-child {
+    order: 2;
+  }
 
-    .top__col:first-child {
-        order: 2;
-    }
+  .top__col:last-child {
+    order: 1;
+  }
 
-    .top__col:last-child {
-        order: 1;
-    }
+  .top__col {
+    width: 100%;
+  }
 
-    .top__col {
-        width: 100%;
-    }
+  .top__image-wrap.image-wrap::after {
+    padding-bottom: 40%;
+  }
 
-    .top__image-wrap.image-wrap::after {
-        padding-bottom: 40%;
-    }
+  .top__image-wrap img {
+    object-fit: cover;
+  }
 
-    .top__image-wrap img {
-        object-fit: cover;
-    }
+  .playstation__list {
+    justify-content: space-between;
+  }
 
-    .playstation__list {
-        justify-content: space-between;
-    }
+  .playstation__item {
+    width: calc(100% / 2 - 0.625rem);
+  }
 
-    .playstation__item {
-        width: calc(100% / 2 - 10px);
-    }
+  .playstation__image-wrap.image-wrap::after {
+    padding-bottom: 40%;
+  }
 
-    .playstation__image-wrap.image-wrap::after {
-        padding-bottom: 40%;
-    }
+  .playstation__list {
+    gap: 1.25rem;
+  }
 
-    .playstation__list {
-        gap: 1.25rem;
-    }
+  .rent__body {
+    padding: 1rem;
+    inset: 0;
+  }
 
-    .rent__body {
-        padding: 1rem;
-        inset: 0;
-    }
+  .rent__stage {
+    font-size: 6.25rem;
+  }
 
-    .rent__stage {
-        font-size: 100px;
-    }
+  .rent__right-title {
+    font-size: 2rem;
+  }
 
-    .rent__right-title {
-        font-size: 2rem;
-    }
+  .game__item {
+    width: calc(100% / 2 - 1rem);
+  }
 
+  .games__body {
+    align-items: start;
+  }
 
-    .game__item {
-        width: calc(100% / 2 - 1rem);
-    }
+  .games__body {
+    flex-direction: column;
+  }
 
-    .games__body {
-        align-items: start;
-    }
+  .games__left {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
-    .games__body {
-        flex-direction: column;
-    }
+  .games__left-wrap.image-wrap::after {
+    padding-bottom: 60%;
+  }
 
-    .games__left {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
+  .games__left-wrap .image-fluid {
+    object-fit: contain;
+  }
 
-    .games__left-wrap.image-wrap::after {
-        padding-bottom: 60%;
-    }
+  .games__right {
+    width: 100%;
+  }
 
-    .games__left-wrap .image-fluid {
-        object-fit: contain;
-    }
+  .game__item {
+    width: calc(100% / 4 - 1rem);
+  }
 
-    .games__right {
-        width: 100%;
-    }
+  .list-block {
+    padding-top: 4.5rem;
+  }
 
-    .game__item {
-        width: calc(100% / 4 - 1rem);
-    }
+  .conditions__inner {
+    flex-direction: column;
+    position: relative;
+  }
 
-    .list-block {
-        padding-top: 4.5rem;
-    }
+  .conditions__left {
+    width: 100%;
+    padding-bottom: 6rem;
+  }
 
-    .conditions__inner {
-        flex-direction: column;
-        position: relative;
-    }
+  .condition__item-wrap {
+    width: 15vw;
+  }
 
-    .conditions__left {
-        width: 100%;
-    }
+  .conditions__right {
+    margin: 0 auto;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
 
-    .condition__item-wrap {
-        width: 15vw;
-    }
+  .other__item {
+    padding: 1rem;
+  }
 
-    .conditions__right {
-        margin: 0 auto;
-        position: absolute;
-        bottom: -100%;
-        left: 50%;
-        transform: translate(-50%, -80%);
-        display: none;
-    }
+  .other__item-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 
-    .other__item {
-        padding: 1rem;
-    }
+  .other__item-btn {
+    gap: 0;
+    justify-content: space-between;
+  }
 
-    .other__item-title {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+  .main-form__btn {
+    text-align: center;
+    justify-content: center;
+  }
 
-    .other__item-btn {
-        gap: 0;
-        justify-content: space-between;
-    }
-
-    .main-form__btn {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .footer__inner {
-        grid-template-columns: 60px repeat(2, 1fr);
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .footer__col {
-        width: calc(100% / 3 - 1rem);
-    }
-
-    .footer__phone {
-        margin-bottom: 1rem;
-    }
-
-    .rent,
-    .padding-bottom {
-        padding: 2.75rem 0;
-    }
-
-    .toggle-menu__btn {
-        display: flex;
-    }
-
-    .header__phones {
-        margin-right: 2rem;
-    }
-
+  .footer__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-    .top__title {
-        max-width: 100%;
-        font-size: 3.2rem;
-        margin-top: 0.7rem;
-    }
+  .header__inner {
+    justify-content: space-between;
+  }
+  .header__phones {
+    display: none;
+  }
+  .toggle-menu__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle-menu .header__phones {
+    margin-left: 0;
+    display: block;
+  }
+  .toggle-menu .header__phone {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.25rem;
+    margin-left: 0;
+  }
+  .toggle-menu__btn {
+    display: block;
+    margin-left: 0.5rem;
+  }
+  .modal {
+    padding: 1rem;
+  }
+  .modal__container {
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
 
-    .games__subtitle {
-        font-size: 1.75rem;
-    }
+  .select2-container .select2-selection--single {
+    padding: 0.75rem 0.85rem;
+  }
 
-    .rent__list {
-        padding-top: 3.5rem;
-    }
+  .top__title {
+    max-width: 100%;
+    font-size: 3.2rem;
+    margin-top: 0.7rem;
+  }
 
-    .rent__item {
-        width: 100%;
-    }
+  .games__subtitle {
+    font-size: 1.75rem;
+  }
 
-    .rent__body {
-        padding: 2.5rem 1rem;
-    }
+  .rent__list {
+    padding-top: 3.5rem;
+  }
 
+  .rent__item {
+    width: 100%;
+  }
 
-    .rent__item:nth-child(1) .image-fluid {
-        border-top-left-radius: 0rem;
-    }
+  .rent__body {
+    padding: 1rem 1rem;
+  }
 
-    .rent__item:nth-child(2) .image-fluid {
-        border-top-right-radius: 0rem;
-    }
+  .rent__item:nth-child(1) .image-fluid {
+    border-top-left-radius: 0rem;
+  }
 
-    .rent__item:nth-child(3) .image-fluid {
-        border-bottom-left-radius: 0rem;
-    }
+  .rent__item:nth-child(2) .image-fluid {
+    border-top-right-radius: 0rem;
+  }
 
-    .rent__item:nth-child(4) .image-fluid {
-        border-bottom-right-radius: 0rem;
-    }
+  .rent__item:nth-child(3) .image-fluid {
+    border-bottom-left-radius: 0rem;
+  }
 
-    .rent__right-title {
-        font-size: 1.5rem;
-    }
+  .rent__item:nth-child(4) .image-fluid {
+    border-bottom-right-radius: 0rem;
+  }
 
-    .rent__stage {
-        font-size: 70px;
-    }
+  .rent__right-title {
+    font-size: 1.5rem;
+  }
 
-    .games__left {
-        margin-bottom: 1.5rem;
-    }
+  .rent__stage {
+    font-size: 4.375rem;
+  }
 
-    .list-block {
-        padding-top: 3.5rem;
-    }
+  .games__left {
+    margin-bottom: 1.5rem;
+  }
 
+  .list-block {
+    padding-top: 3.5rem;
+  }
 
-    .conditions__inner {
-        flex-direction: column;
-        position: relative;
-        margin-top: 3.5rem;
-    }
+  .conditions__inner {
+    flex-direction: column;
+    position: relative;
+    margin-top: 3.5rem;
+  }
 
-    .conditions__left {
-        width: 100%;
-        padding-bottom: 2.15rem;
-    }
+  .conditions__left {
+    width: 100%;
+    padding-bottom: 2.15rem;
+  }
 
-    .condition__item-wrap {
-        min-width: 15vw;
-    }
+  .condition__item-wrap {
+    min-width: 15vw;
+  }
 
+  .conditions__right {
+    display: none;
+  }
 
+  .other__item {
+    padding: 1rem;
+  }
 
-    .other__item {
-        padding: 1rem;
-    }
+  .other__list {
+    gap: 1rem;
+    justify-content: space-between;
+  }
 
+  .other__item {
+    width: calc(100% / 2 - 0.5rem);
+    padding: 0.75rem;
+  }
 
-    .other__list {
-        gap: 1rem;
-        justify-content: space-between;
-    }
+  .other__item-title {
+    font-size: 1.25rem;
+  }
 
-    .other__item {
-        width: calc(100% /2 - 0.5rem);
-        padding: 0.75rem;
-    }
+  .form-block__inner {
+    flex-direction: column;
+  }
 
-    .other__item-title {
-        font-size: 1.25rem;
-    }
+  .form-block__left {
+    width: 100%;
+  }
 
+  .form-block__image-wrap .image-fluid {
+    object-fit: contain;
+  }
 
-    .form-block__inner {
-        flex-direction: column;
-    }
+  .form-block__image-wrap.image-wrap::after {
+    padding-bottom: 50%;
+  }
 
-    .form-block__left {
-        width: 100%;
-    }
+  .form-block__right {
+    width: 100%;
+  }
 
-    .form-block__image-wrap .image-fluid {
-        object-fit: contain;
-    }
+  .padding-bottom {
+    padding-bottom: 4rem;
+  }
 
-    .form-block__image-wrap.image-wrap::after {
-        padding-bottom: 50%;
-    }
+  .faqs__list {
+    margin-top: 4rem;
+  }
 
-    .form-block__right {
-        width: 100%;
-    }
+  .rent__image-wrap.image-wrap::after {
+    padding-bottom: 21%;
+  }
 
-    .faq__ask-text {
-        font-size: 1.05rem;
-    }
+  .rent {
+    padding: 3.5rem 0;
+  }
 
-    .faq__answer-text {
-        font-size: 0.95rem;
-    }
-
-    .faq__ask {
-        margin-bottom: 0.75rem;
-    }
-
-    .faqs__list {
-        padding: 1rem;
-        margin-top: 2.5rem;
-    }
-
-    .footer {
-        padding: 2rem 0;
-    }
-
-    .rent,
-    .padding-bottom {
-        padding: 3.5rem 0;
-    }
+  .other {
+    margin-top: 0;
+  }
 }
-
 
 @media (max-width: 660px) {
-    .game__item {
-        width: calc(100% / 3 - 1rem);
-        flex-grow: 1;
-    }
+  .game__item {
+    width: calc(100% / 3 - 1rem);
+    flex-grow: 1;
+  }
 
-    .condition__item-wrap {
-        flex-shrink: 0;
-        min-width: 35%;
-    }
+  .condition__item-wrap {
+    flex-shrink: 0;
+    min-width: 35%;
+  }
 
-    .condition__item {
-        gap: 0.75rem
-    }
+  .condition__item {
+    gap: 0.75rem;
+  }
 
-    .conditions__left {
-        padding: 1.15rem;
-    }
+  .conditions__left {
+    padding: 1.15rem;
+  }
 
-    .condition__item-title {
-        font-size: 1.75rem;
-    }
+  .condition__item-title {
+    font-size: 1.75rem;
+  }
 
-    .condition__item-wrap {
-        display: none;
-    }
+  .condition__item-wrap {
+    display: none;
+  }
 
-    .faqs__list {
-        padding: 0.45rem;
-    }
+  .footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__col {
+    flex-grow: 1;
+  }
 
-    .faq__item {
-        padding: 0.75rem;
-    }
+  .list-block {
+    padding-top: 2.5rem;
+  }
 
-    .footer__inner {
-        grid-template-columns: 60px repeat(2, 1fr);
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .playstation__image-wrap.image-wrap::after {
+    padding-bottom: 60%;
+  }
 
-    .footer__col {
-        width: calc(100% / 2 - 1rem);
-        flex-grow: 1;
-    }
+  .faq__ask-text {
+    font-size: 1.35rem;
+    padding-bottom: 0.25rem;
+  }
 
-    .footer__phone {
-        margin-bottom: 1rem;
-    }
-
+  .faqs__list {
+    margin-top: 2.5rem;
+    padding: 1rem;
+  }
 }
-
 
 @media (max-width: 550px) {
-    .top {
-        padding: 3.5rem 0;
-    }
+  .top {
+    padding: 3.5rem 0;
+  }
 
-    .playstation__item {
-        width: 100%;
-    }
+  .playstation__item {
+    width: 100%;
+    padding: 0rem;
+  }
 
-    .rent__body {
-        padding: 0.75rem;
-    }
+  .rent__body {
+    padding: 0.75rem;
+  }
 
-    .game__item {
-        width: calc(100% / 2 - 1rem);
-        flex-grow: 1;
-    }
+  .game__item {
+    width: calc(100% / 2 - 1rem);
+    flex-grow: 1;
+  }
 
-    .games__subtitle {
-        font-size: 1.3rem;
-    }
+  .games__subtitle {
+    font-size: 1.3rem;
+  }
 
-    .form-block__image-wrap .image-fluid {
-        object-fit: contain;
-    }
+  .form-block__image-wrap .image-fluid {
+    object-fit: contain;
+  }
 
-    .form-block__image-wrap.image-wrap::after {
-        padding-bottom: 100%;
-    }
+  .form-block__image-wrap.image-wrap::after {
+    padding-bottom: 100%;
+  }
 
-    .h2 {
-        font-size: 2rem;
-    }
+  .h2 {
+    font-size: 2rem;
+  }
 
-    .form-block__inner {
-        gap: 1.75rem;
-    }
+  .form-block__inner {
+    gap: 1.75rem;
+  }
 
+  .padding-bottom {
+    padding-bottom: 2.5rem;
+  }
 
-    .rent,
-    .padding-bottom {
-        padding: 2.5rem 0;
-    }
+  .rent__image-wrap.image-wrap::after {
+    padding-bottom: 30%;
+  }
+
+  .footer {
+    padding-top: 1rem;
+  }
+
+  .footer__title {
+    font-size: 1.125rem;
+  }
+
+  .modal__label-data {
+    flex-direction: column;
+  }
 }
 
-
 @media (max-width: 475px) {
+  .top__title {
+    font-size: 2.9rem;
+  }
 
-    .conditions__inner {
-        margin-top: 2.0rem;
-    }
+  .top {
+    padding: 3rem 0;
+  }
 
-    .h2 {
-        font-size: 1.75rem;
-    }
+  .playstation__image-wrap.image-wrap::after {
+    padding-bottom: 60%;
+  }
 
-    html {
-        font-size: 16px;
-    }
+  .playstation__list,
+  .rent__list {
+    padding-top: 2.25rem;
+  }
 
-    .top__title {
-        font-size: 2.9rem;
-    }
+  .list-block {
+    padding-top: 2.25rem;
+  }
 
-    .top {
-        padding: 3rem 0;
-    }
+  .other__item {
+    width: 100%;
+  }
 
-    .playstation__image-wrap.image-wrap::after {
-        padding-bottom: 60%;
-    }
+  .other__list {
+    gap: 1.5rem;
+  }
 
-    .playstation__list,
-    .rent__list {
-        padding-top: 2.25rem;
-    }
+  .faq__ask-text {
+    font-size: 1.125rem;
+  }
 
-    .list-block {
-        padding-top: 2.25rem;
-    }
+  .dev__text {
+    text-align: center;
+  }
 
-    .other__item {
-        width: 100%;
-    }
+  .dev__who {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 
-    .other__list {
-        gap: 1.5rem
-    }
+  .rent__image-wrap.image-wrap::after {
+    padding-bottom: 50%;
+  }
 
-    .faq__item {
-        padding: 0.5rem;
-    }
+  .rent__stage {
+    font-size: 20vw;
+    line-height: 1;
+  }
 
-    .faqs__list {
-        padding: 0.5rem;
-    }
+  .rent__right-title {
+    font-size: 1.25rem;
+  }
 
-    .header__phones {
-        margin: 0px auto;
-    }
+  .rent__right-text {
+    font-size: 1rem;
+  }
 
-    .header__phone {
-        font-size: 1rem;
-    }
+  .modal__container {
+    padding: 1.5rem 0.75rem;
+    position: relative;
+  }
 
-    .toggle-menu__btn svg {
-        width: 50px;
-        height: 50px;
-    }
+  .modal__inner {
+    position: static;
+  }
+
+  .modal__close {
+    right: 0.25rem;
+    top: 0.25rem;
+  }
+
+  .modal__title {
+    font-size: 1.5rem;
+  }
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    font-size: 1rem;
+  }
+
+  .modal__input {
+    font-size: 1rem;
+  }
+
+  .modal__label {
+    padding-inline: 1rem;
+  }
+
+  .modal__label-box {
+    padding-inline: 1rem;
+  }
+
+  .modal__textarea {
+    padding-inline: 1rem;
+  }
+
+  .modal__submit {
+    padding: 0.75rem 0;
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__col {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__link {
+    text-align: center;
+  }
 }
 
 @media (max-width: 360px) {
-    .top__title {
-        font-size: 2.3rem;
-    }
+  .top__title {
+    font-size: 2.3rem;
+  }
 
-    .game__item {
-        width: 100%;
-        flex-grow: 1;
-    }
+  .game__item {
+    width: 100%;
+    flex-grow: 1;
+  }
 
-    .games__right {
-        gap: 1.75rem;
-    }
+  .games__right {
+    gap: 1.75rem;
+  }
 
-    .games__left-wrap .image-fluid {
-        object-fit: cover;
-    }
+  .games__left-wrap .image-fluid {
+    object-fit: cover;
+  }
 
-    .games__left-wrap.image-wrap::after {
-        padding-bottom: 100%;
-    }
+  .games__left-wrap.image-wrap::after {
+    padding-bottom: 100%;
+  }
 
-    /* .game__item-wrap.image-wrap::after {
+  /* .game__item-wrap.image-wrap::after {
         padding-bottom: 60%;
     }
     .game__item-wrap .image-fluid {
         object-fit: contain;
     } */
-    .game__body-name {
-        font-size: 1.2rem;
-        margin: 1rem 0;
-    }
-
-    .faq__ask-text {
-        font-size: 1rem;
-    }
-
-    .faq__toggle {
-        padding-right: 0.35rem;
-    }
-
-    .footer__col {
-        width: 100%;
-        flex-grow: 1;
-        align-items: center;
-    }
-
-    .dev__text {
-        text-align: center;
-    }
-
-    .footer__links {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .footer__link {
-        width: calc(100% / 2 - 20px);
-        flex-grow: 1;
-    }
-
-    .rent,
-    .padding-bottom {
-        padding: 2rem 0;
-    }
-
+  .game__body-name {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+}
