@@ -21,7 +21,6 @@ html {
 
 body {
   font-family: "Overpass", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   line-height: 1.1;
   font-style: normal;
@@ -272,7 +271,7 @@ h2 {
 }
 
 .playstation__item-body {
-  padding: 2rem;
+  padding: 2.5rem 1.5rem;
   flex-grow: 1;
   border: 0.125rem solid var(--primary);
   border-radius: 1rem;
@@ -528,10 +527,11 @@ h2 {
 
 .conditions {
   padding-bottom: 7.5rem;
+  overflow: hidden;
 }
 
 .conditions__inner {
-  background-image: url(https://arendapristavok.by/wp-content/uploads/2024/01/Rectangle-14-1.png);
+  background-image: url(../../public/assets/rent-bg.webp);
   display: flex;
   align-items: start;
   margin-top: 5rem;
@@ -896,8 +896,8 @@ select {
   font-size: 1.375rem;
 
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
   /* Добавляем свою стрелку */
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -1069,4 +1069,99 @@ select {
 .error-message {
   background: #f8d7da;
   color: #721c24;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 15;
+  gap: 0.5rem;
+}
+
+.widget__item {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.widget__item-btn {
+  background-color: var(--primary);
+}
+
+.phone {
+  background-color: #03e78b;
+}
+
+.whatsapp {
+  background-color: #49e670;
+}
+
+.viber {
+  background-color: #665cac;
+}
+
+.telegram {
+  background-color: #3e99d8;
+}
+
+.instagram {
+  background: radial-gradient(
+    circle farthest-corner at 35% 90%,
+    #f9ce34 0%,
+    #ee2a7b 50%,
+    #6228d7 100%
+  );
+}
+
+.widget__item:hover {
+  opacity: 0.8;
+}
+
+.widget__items-container {
+  user-select: none;
+  visibility: hidden;
+  transform: translateY(-2rem);
+  transition: opacity 500ms ease, transform 500ms linear;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.widget__items-container.active {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 300ms ease, visibility 300ms linear,
+    transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.widget__item-btn img {
+  transition: opacity 0.3s, transform 0.3s;
+}
+.widget__item-btn.active img {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+@media (hover: none) and (pointer: coarse) {
+  div:has(img):hover {
+    background-color: initial;
+    color: initial;
+  }
+  a:has(img):hover {
+    background-color: initial;
+    color: initial;
+  }
+
+  button:has(img):hover {
+    background-color: initial;
+    color: initial;
+  }
 }

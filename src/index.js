@@ -1,6 +1,6 @@
-import "./css/style.css";
-import "./css/style_992.css";
 import "./css/normalize.css";
+import "./css/style.css";
+import "./css/style-mobile.css";
 
 import "./js/module";
 import "./js/form";
@@ -36,6 +36,11 @@ $(document).ready(function () {
 
   $modalContainer.on("click", function (event) {
     event.stopPropagation();
+  });
+  const playstationTab = $(".playstation__tab");
+  playstationTab.on("click", (event) => {
+    $(".playstation__tab.active").removeClass("active");
+    event.currentTarget.classList.add("active");
   });
 });
 
@@ -97,3 +102,24 @@ jQuery(document).ready(function ($) {
     });
   });
 });
+
+const widgetBtn = document.querySelector(".widget__item-btn");
+if (widgetBtn) {
+  widgetBtn.addEventListener("click", (event) => {
+    const widgetContainer = document.querySelector(".widget__items-container");
+    const defaultIcon = widgetBtn.querySelector(".icon-default");
+    const activeIcon = widgetBtn.querySelector(".icon-active");
+
+    if (widgetContainer) {
+      widgetContainer.classList.toggle("active");
+
+      if (widgetContainer.classList.contains("active")) {
+        defaultIcon.style.opacity = "0";
+        activeIcon.style.opacity = "1";
+      } else {
+        defaultIcon.style.opacity = "1";
+        activeIcon.style.opacity = "0";
+      }
+    }
+  });
+}
