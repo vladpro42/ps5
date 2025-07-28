@@ -26,6 +26,12 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
   </head>
 
   <body>
@@ -851,7 +857,7 @@
 
                 <label class="main-form__label">
                   <input
-                    class="main-form__input phone-mask"
+                    class="main-form__input"
                     type="text"
                     name="phone"
                     placeholder="+375 (___) ___-__-__"
@@ -1089,14 +1095,14 @@
 
           <span class="modal__title">Заказать прокат</span>
 
-          <select class="modal__select">
+          <select name="game_console_id" class="modal__select">
             <option selected value="">Без консоли</option>
             <option value="">PlayStation 5</option>
             <option value="">PlayStation 4 Pro</option>
             <option value="">XBox One X</option>
           </select>
 
-          <select class="modal__select">
+          <select name="game_id" class="modal__select">
             <option selected value="">Без диска</option>
             <option value="">Другой диск</option>
             <option value="">Assassins Creed Mirage</option>
@@ -1116,24 +1122,53 @@
           </select>
 
           <label class="modal__label">
-            <input class="modal__input" type="text" placeholder="Имя*" />
+            <input
+              class="modal__input"
+              name="name"
+              type="text"
+              placeholder="Имя*"
+            />
           </label>
 
           <label class="modal__label">
-            <input class="modal__input" type="text" placeholder="Телефон*" />
+            <input
+              class="modal__input"
+              name="phone"
+              type="text"
+              placeholder="Телефон*"
+            />
           </label>
 
           <div class="modal__label-data">
             <div class="modal__label-box">
-              <input class="modal__input" type="text" placeholder="Дата с*" />
+              <input
+                class="modal__input"
+                name="date_from"
+                type="date"
+                placeholder="Дата с*"
+              />
             </div>
             <div class="modal__label-box">
-              <input class="modal__input" type="text" placeholder="Дата по*" />
+              <input
+                class="modal__input"
+                name="date_to"
+                type="datetime-local"
+                placeholder="Дата по*"
+              />
             </div>
           </div>
-          <textarea class="modal__textarea" placeholder="Сообщение"></textarea>
+          <textarea
+            class="modal__textarea"
+            name="message"
+            placeholder="Сообщение"
+          ></textarea>
 
-          <input class="modal__submit" type="submit" value="Заказать" />
+          <input
+            class="modal__submit"
+            type="submit"
+            name="submit"
+            value="Заказать"
+          />
         </div>
       </div>
     </div>

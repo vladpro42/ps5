@@ -970,6 +970,7 @@ select {
 }
 
 .modal__input {
+  color: #fff;
   font-size: 1.375rem;
   width: 100%;
 }
@@ -982,6 +983,7 @@ select {
 }
 
 .modal__textarea {
+  color: #fff;
   width: 100%;
   min-height: 4.625rem;
   font-size: 1.375rem;

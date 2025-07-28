@@ -6,7 +6,11 @@ import "./js/module";
 import "./js/form";
 import "./js/toggleMenu";
 
+
+
 $(document).ready(function () {
+
+
   $(".modal__select").select2({
     minimumResultsForSearch: Infinity,
     dropdownParent: "body",
@@ -19,6 +23,9 @@ $(document).ready(function () {
   const $closeButtons = $(".modal__close");
 
   $orderButtons.on("click", function () {
+    $modal.addClass("active");
+  });
+  $('.other__item-btn').on("click", function () {
     $modal.addClass("active");
   });
 
@@ -81,8 +88,8 @@ jQuery(document).ready(function ($) {
           // Можно добавить номер заявки в форму
           $form.append(
             '<input type="hidden" name="submission_id" value="' +
-              response.insert_id +
-              '">'
+            response.insert_id +
+            '">'
           );
         } else {
           $errorMsg.html(response.data).show();
