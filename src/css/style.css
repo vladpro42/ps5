@@ -606,9 +606,13 @@ h2 {
 
 .other__item-body {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .other__item-title {
+  flex-grow: 1;
   font-weight: 700;
   text-align: center;
   font-size: 2rem;
@@ -843,7 +847,7 @@ select {
   max-width: 40rem;
   width: 100%;
   border-radius: 2.5rem;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 
   transform: translateY(-1.25rem);
   transition: transform var(--primary-time) ease;
@@ -899,7 +903,7 @@ select {
   /* -webkit-appearance: none; */
   /* -moz-appearance: none; */
   /* Добавляем свою стрелку */
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("../assets/svg/angle-down-solid-full.svg");
   background-repeat: no-repeat;
   background-position: right 0.625rem center;
   background-size: 1rem;
@@ -975,11 +979,29 @@ select {
   width: 100%;
 }
 
+.modal__label-box:has(.modal__input[type="date"]) {
+  padding: 0;
+}
+
+.modal__input[type="date"] {
+  position: relative;
+  padding: 0.625rem 2rem;
+}
+
+.modal__input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  cursor: pointer;
+}
+
 .modal__label-box {
   border: 0.125rem solid var(--primary);
   border-radius: 1.25rem;
   padding: 0.625rem 2rem;
   display: flex;
+  flex-grow: 1;
 }
 
 .modal__textarea {
@@ -1143,27 +1165,78 @@ select {
   transition: opacity 300ms ease, visibility 300ms linear,
     transform 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.widget__items-container.hidden .widget__item {
+  animation-name: stack;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
 
+.widget__items-container.hidden .widget__item:nth-child(1) {
+  animation-delay: 0ms;
+}
+.widget__items-container.hidden .widget__item:nth-child(2) {
+  animation-delay: 100ms;
+}
+.widget__items-container.hidden .widget__item:nth-child(3) {
+  animation-delay: 200ms;
+}
+.widget__items-container.hidden .widget__item:nth-child(4) {
+  animation-delay: 300ms;
+}
+.widget__items-container.hidden .widget__item:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+/* Показ: снизу вверх */
+.widget__items-container:not(.hidden) .widget__item {
+  animation-name: unstack;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.widget__items-container:not(.hidden) .widget__item:nth-child(5) {
+  animation-delay: 0ms;
+}
+.widget__items-container:not(.hidden) .widget__item:nth-child(4) {
+  animation-delay: 100ms;
+}
+.widget__items-container:not(.hidden) .widget__item:nth-child(3) {
+  animation-delay: 200ms;
+}
+.widget__items-container:not(.hidden) .widget__item:nth-child(2) {
+  animation-delay: 300ms;
+}
+.widget__items-container:not(.hidden) .widget__item:nth-child(1) {
+  animation-delay: 400ms;
+}
+
+@keyframes stack {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes unstack {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .widget__item-btn img {
   transition: opacity 0.3s, transform 0.3s;
 }
 .widget__item-btn.active img {
   opacity: 0;
   transform: rotate(90deg);
-}
-
-@media (hover: none) and (pointer: coarse) {
-  div:has(img):hover {
-    background-color: initial;
-    color: initial;
-  }
-  a:has(img):hover {
-    background-color: initial;
-    color: initial;
-  }
-
-  button:has(img):hover {
-    background-color: initial;
-    color: initial;
-  }
 }

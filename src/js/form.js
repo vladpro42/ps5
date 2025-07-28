@@ -1,52 +1,62 @@
-// const form = document.querySelector(".main-form");
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("#ajax-form");
+    if (!form) return;
 
-// document
-//   .querySelector('.main-form__input[name="phone"]')
-//   .addEventListener("input", function (e) {
-//     this.value = this.value.replace(/[^0-9+]/g, "");
-//   });
+    const loader = form.querySelector(".svg-loader");
+    const successMsg = form.querySelector(".success-message");
+    const errorMsg = form.querySelector(".error-message");
+    const submitBtn = form.querySelector(".main-form__btn");
 
-// if (form) {
-//   form.addEventListener("submit", async (event) => {
-//     event.preventDefault();
-//     const nameBlock = form.querySelector('.main-form__input[name="name"]');
-//     const phoneBlock = form.querySelector('.main-form__input[name="phone"]');
-//     const messageBlock = form.querySelector(
-//       '.main-form__textarea[name="message"]'
-//     );
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
 
-//     if (!nameBlock.value.length) {
-//       alert("Ведите имя.");
-//       return;
-//     }
+        const phoneInput = form.querySelector('[name="phone"]');
+        const phone = phoneInput?.value.trim();
 
-//     if (!phoneBlock.value.length) {
-//       alert("Ведите телефон.");
-//       return;
-//     }
+        // Валидация телефона
+        if (!phone || phone.replace(/\D/g, "").length < 7) {
+            errorMsg.textContent = "Введите корректный номер телефона";
+            errorMsg.style.display = "block";
+            return;
+        }
 
-//     if (messageBlock.value.length > 2000) {
-//       alert("Максимальная длина символов 2000");
-//       return;
-//     }
+        // Показываем лоадер и отключаем кнопку
+        loader.style.display = "block";
+        submitBtn.disabled = true;
+        errorMsg.style.display = "none";
+        successMsg.style.display = "none";
 
-//     const formData = new FormData(event.currentTargets);
+        const formData = new FormData(form);
 
-//     formData.append("name", nameBlock.value.trim());
-//     formData.append("phone", phoneBlock.value.trim());
-//     formData.append("message", messageBlock.value.trim());
-//     formData.append("submit", "");
+        try {
+            const response = await fetch(ajax_object.ajaxurl, {
+                method: "POST",
+                body: formData,
+            });
 
-//     try {
-//       const res = await fetch("/", {
-//         method: "POST",
-//         body: formData,
-//       });
-//       const json = await res.json();
-//       console.log(json);
-//     } catch (error) {
-//       console.log(error);
-//       alert("Произошла ошибка попробуйте перезагрузить страницу.");
-//     }
-//   });
-// }
+            const data = await response.json();
+
+            if (data.success) {
+                form.reset();
+                successMsg.innerHTML = data.data;
+                successMsg.style.display = "block";
+
+                // Добавляем скрытое поле с submission_id
+                const hiddenInput = document.createElement("input");
+                hiddenInput.type = "hidden";
+                hiddenInput.name = "submission_id";
+                hiddenInput.value = data.insert_id || "";
+                form.appendChild(hiddenInput);
+            } else {
+                errorMsg.innerHTML = data.data || "Произошла ошибка";
+                errorMsg.style.display = "block";
+            }
+        } catch (error) {
+            errorMsg.innerHTML = "Ошибка соединения";
+            errorMsg.style.display = "block";
+        } finally {
+            loader.style.display = "none";
+            submitBtn.disabled = false;
+        }
+    });
+});
